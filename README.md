@@ -5,5 +5,5 @@ A Star Trek LCARS theme for Home Assistant
 
 A re-work is on it's way... Project started 01-MAY-2025
 
-Expect nothing soon ...Resitance is futile
+Expect nothing soon ...Resitance is futile (complaining is also futile)
 
