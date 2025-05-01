@@ -3,6 +3,6 @@
   "content_in_root": false,
   "render_readme": true,
   "filename": "lcars.yaml",
-  "country": ["US", "GB"]
+  "country": ["US", "GB"],
   "extra_module_url": ["/hacsfiles/picard-lcars/picard-lcars-runtime.js"]
 }
