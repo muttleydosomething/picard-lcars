@@ -11,8 +11,9 @@ Picard_LCARS:
   lcars-black: "#000000"
 
   # Base interface colors
-  primary-color: "var(--lcars-orange)"
-  accent-color: "var(--lcars-pink)"
+  primary-color: "#00e8ff"
+  accent-color: "#00e8ff"
+
   dark-primary-color: "var(--lcars-purple)"
   light-primary-color: "var(--lcars-blue)"
   
@@ -43,6 +44,68 @@ Picard_LCARS:
   sidebar-selected-icon-color: "var(--lcars-orange)"
   sidebar-selected-text-color: "var(--lcars-orange)"
   
+
+  # Updated Card-mod specific styling for paper-icon-item
+  card-mod-theme: |
+    /* Target all paper-icon-items in the sidebar */
+    ha-sidebar paper-icon-item {
+      border: 2px solid #00e8ff;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #00e8ff, 0 0 20px rgba(0, 232, 255, 0.5);
+      margin: 5px 0;
+      background: rgba(0, 232, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    ha-sidebar paper-icon-item:hover {
+      box-shadow: 0 0 15px #00e8ff, 0 0 30px rgba(0, 232, 255, 0.7);
+      background: rgba(0, 232, 255, 0.1);
+    }
+    
+    /* Make selected items glow brighter */
+    ha-sidebar paper-icon-item[aria-selected="true"],
+    ha-sidebar .iron-selected paper-icon-item {
+      border-color: #00ffff;
+      box-shadow: 0 0 15px #00ffff, 0 0 25px rgba(0, 255, 255, 0.7);
+      background: rgba(0, 255, 255, 0.15);
+    }
+  
+    
+  # Try modifying through Home Assistant variables
+  #sidebar-icon-color: "#00e8ff"
+  #sidebar-selected-icon-color: "#00ffff"
+  #sidebar-selected-text-color: "#00ffff"
+  
+  # Use the global card-mod
+  card-mod-root: |
+    :host {
+      --sidebar-item-border: 2px solid #00e8ff;
+      --sidebar-item-border-radius: 20px;
+      --sidebar-item-box-shadow: 0 0 10px #00e8ff, 0 0 20px rgba(0, 232, 255, 0.5);
+    }
+    
+    #ha-sidebar a.iron-selected {
+      border: 2px solid #00ffff !important;
+      box-shadow: 0 0 15px #00ffff !important;
+    }
+
+  # Card-mod specific styling for paper-icon-item
+  #card-mod-theme: |
+  #  paper-icon-item {
+  #    border: 2px solid #00e8ff;
+  #    border-radius: 20px;
+  #    box-shadow: 0 0 10px #00e8ff, 0 0 20px rgba(0, 232, 255, 0.5);
+  #    margin: 5px 0;
+  #    background: rgba(0, 232, 255, 0.05);
+  #    transition: all 0.3s ease;
+  #  }
+  #  
+  #  paper-icon-item:hover {
+  #    box-shadow: 0 0 15px #00e8ff, 0 0 30px rgba(0, 232, 255, 0.7);
+  #    background: rgba(0, 232, 255, 0.1);
+  #  }
+
+
   # Custom Resources
   # This adds your JS file to the theme
   theme-resources: >-
