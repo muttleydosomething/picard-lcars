@@ -1,8 +1,7 @@
 {
   "name": "Picard LCARS",
-  "content_in_root": false,
   "render_readme": true,
-  "filename": "themes/picard-lcars.yaml",
+  "filename": "picard-lcars.yaml",
   "country": ["US", "GB"],
-  "extra_module_url": ["/hacsfiles/picard-lcars/themes/picard-lcars-runtime.js"]
+  "extra_module_url": ["/hacsfiles/picard-lcars/picard-lcars-runtime.js"]
 }
