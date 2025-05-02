@@ -1,8 +1,9 @@
 {
   "name": "Picard LCARS",
-  "content_in_root": true,
+  "content_in_root": false,
   "render_readme": true,
-  "filename": "picard-lcars.yaml",
+  "filename": "themes/picard-lcars.yaml",
   "country": ["US", "GB"],
-  "extra_module_url": ["/hacsfiles/picard-lcars/picard-lcars-runtime.js"]
+  "hacs": "2.0.5",
+  "homeassistant": "2025.4.4"
 }
