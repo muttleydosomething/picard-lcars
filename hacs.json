@@ -2,7 +2,7 @@
   "name": "Picard LCARS",
   "content_in_root": false,
   "render_readme": true,
-  "filename": "themes/picard-lcars.yaml",  // Corrected path and filename
+  "filename": "themes/picard-lcars.yaml",
   "country": ["US", "GB"],
-  "extra_module_url": ["/hacsfiles/picard-lcars/themes/picard-lcars-runtime.js"] // Corrected path
+  "extra_module_url": ["/hacsfiles/picard-lcars/themes/picard-lcars-runtime.js"]
 }
