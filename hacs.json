@@ -1,5 +1,6 @@
 {
   "name": "Picard LCARS",
+  "content_in_root": true,
   "render_readme": true,
   "filename": "picard-lcars.yaml",
   "country": ["US", "GB"],
