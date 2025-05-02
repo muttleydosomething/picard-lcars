@@ -5,5 +5,8 @@
   "filename": "themes/picard-lcars.yaml",
   "country": ["US", "GB"],
   "hacs": "2.0.5",
-  "homeassistant": "2025.4.4"
+  "homeassistant": "2025.4.0",
+  "resources": [
+    "resources/picard-lcars-runtime.js"
+  ]
 }
